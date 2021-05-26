@@ -1,0 +1,42 @@
+$headings-font-family: "Avenir", sans-serif;
+$primary: #F2E8F0 ;
+$dark: #261623 ;
+$secondary: #8E5BFD;
+$danger: #E78A07;
+
+
+.hover-secondary :hover{
+    color:$secondary;
+    font-style: none;
+}
+
+.fas
+{
+    border: none;
+    background:none;
+    align-self: center;
+}
+
+.fas:hover::before, .fa-heart:active::before {
+    background: linear-gradient($danger, $secondary);
+    font-weight: bold; /*background prend la forme du coeur*/
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+}
+
+.card-personalized{
+   display: flex;
+   justify-content: center;
+}
+
+.card-container{
+    display: flex;
+    justify-content: space-between;
+ }
+
+ .card-columns{
+    widows:0;
+    orphans:0;
+    column-count: 0;
+ }
